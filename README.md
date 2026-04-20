@@ -1,6 +1,6 @@
-# will.sryze.cc
+# Portfolio Website
 
-A sleek, mobile-friendly personal profile website designed to showcase my social links, projects, and contact information in one simple page.
+A sleek, mobile-friendly personal profile website designed to showcase your social links, projects, and contact information in one simple page.
 
 ---
 
@@ -49,7 +49,5 @@ william.h61909@gmail.com
 ---
 
 ## License
-
-This project is for personal use and portfolio purposes.
 
 Feel free to take inspiration, but do not copy the site directly without permission.
