@@ -2,8 +2,6 @@
 
 A sleek, mobile-friendly personal profile website designed to showcase my social links, projects, and contact information in one simple page.
 
-Live Site: https://me.will.sryze.cc/
-
 ---
 
 ## Features
@@ -46,9 +44,7 @@ Depending on the current deployment, the site may use:
 
 If you'd like to collaborate, ask questions, or connect:
 
-Visit the website and use the provided social or contact links.
-
-https://me.will.sryze.cc
+william.h61909@gmail.com
 
 ---
 
