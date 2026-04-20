@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>William Holley | Developer</title>
+  <meta name="title" content="William Holley | Developer">
+  <meta name="description" content="A young developer specializing in high-performance Slack & Discord tools, JavaScript, and Automation.">
+  <meta name="author" content="William Holley">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://me.will.sryze.cc/">
+  <meta property="og:title" content="William Holley | Developer">
+  <meta property="og:description" content="Engineering high-performance tools and automation logic.">
+  <meta property="og:image" content="https://me.will.sryze.cc/favicons/apple-touch-icon.png">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://me.will.sryze.cc/">
+  <meta property="twitter:title" content="William Holley | Developer">
+  <meta property="twitter:description" content="Engineering high-performance tools and automation logic.">
+  <meta property="twitter:image" content="https://me.will.sryze.cc/favicons/apple-touch-icon.png">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="shortcut icon" href="favicons/favicon.ico">
+  <link rel="manifest" href="favicons/site.webmanifest">
+  <meta id="theme-color-meta" name="theme-color" content="#fdfcf9">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #fdfcf9; --surface: rgba(255, 255, 255, 0.7); --text: #1a1a1a; --muted: #64748b;
+      --line: #e2e8f0; --accent: #0f172a; --r-card: 24px; 
+    }
+    [data-theme="dark"] {
+      --bg: #0b0b0a; --surface: rgba(22, 22, 21, 0.7); --text: #f1f5f9; --muted: #94a3b8;
+      --line: #262626; --accent: #ffffff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; text-decoration: none !important; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); color: var(--text); height: 100vh; display: flex; flex-direction: column; transition: background 0.5s ease; overflow: hidden; }
+    
+    .wrap { width: 100%; max-width: 700px; margin: 0 auto; padding: 0 clamp(1rem, 5vw, 2rem); }
+
+    header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: var(--bg); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); padding: clamp(12px, 3vh, 18px) 0; }
+    nav { display: flex; align-items: center; justify-content: space-between; }
+    #header-name { font-weight: 800; font-size: clamp(0.9rem, 4vw, 1.1rem); }
+    
+    .theme-switch { position: relative; width: 56px; height: 28px; background: var(--line); border-radius: 30px; cursor: pointer; display: flex; align-items: center; justify-content: space-around; font-size: 0.8rem; }
+    .switch-handle { position: absolute; left: 3px; width: 22px; height: 22px; background: var(--accent); border-radius: 50%; transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); }
+    [data-theme="dark"] .switch-handle { transform: translateX(28px); }
+
+    main { flex: 1; display: flex; align-items: center; justify-content: center; text-align: center; }
+    
+    .error-container { padding: 40px 20px; }
+    .error-code { font-size: clamp(5rem, 20vw, 8rem); font-weight: 800; letter-spacing: -0.05em; line-height: 1; margin-bottom: 10px; color: var(--accent); opacity: 0.1; }
+    
+    .hero h1 { font-size: clamp(2rem, 8vw, 3rem); margin-bottom: 15px; letter-spacing: -0.04em; font-weight: 800; }
+    .bio-text { font-size: clamp(0.95rem, 3vw, 1.15rem); color: var(--muted); margin-bottom: 30px; }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--accent); color: var(--bg);
+      padding: 14px 28px; border-radius: 50px;
+      font-weight: 700; font-size: 1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
+    
+    .timer-text { margin-top: 20px; font-size: 0.85rem; color: var(--muted); font-weight: 500; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <nav>
+        <span id="header-name">William Holley</span>
+        <div class="theme-switch" id="js-theme-btn">
+          <i class="fa-solid fa-sun"></i><i class="fa-solid fa-moon"></i>
+          <div class="switch-handle"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="error-container">
+      <div class="error-code">404</div>
+      <section class="hero">
+        <h1>Lost in the Logic.</h1>
+        <p class="bio-text">The page you're looking for doesn't exist or has been moved.</p>
+        <a href="/" class="btn">
+          <i class="fa-solid fa-house"></i>
+          Return Home
+        </a>
+        <p class="timer-text">Redirecting in <span id="timer">10</span>s...</p>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    // Theme Logic
+    const setTheme = (theme) => {
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('wh-theme', theme);
+      document.getElementById('theme-color-meta').setAttribute('content', theme === 'dark' ? '#0b0b0a' : '#fdfcf9');
+    };
+
+    const savedTheme = localStorage.getItem('wh-theme');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    setTheme(savedTheme || (systemPrefersDark ? 'dark' : 'light'));
+
+    document.getElementById('js-theme-btn').onclick = () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      setTheme(current === 'dark' ? 'light' : 'dark');
+    };
+
+    // Auto-Redirect Timer
+    let seconds = 10;
+    const timerEl = document.getElementById('timer');
+    
+    const countdown = setInterval(() => {
+      seconds--;
+      timerEl.textContent = seconds;
+      if (seconds <= 0) {
+        clearInterval(countdown);
+        window.location.href = "/";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
